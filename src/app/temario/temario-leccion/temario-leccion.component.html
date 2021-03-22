@@ -4,7 +4,7 @@
     <div class="temas-container w-25">
         {{temarioElegido.nombre}}
     </div>
-    <div class="w-75">
+    <div class="w-75 list-container">
         <div class="list-group-item clearfix" *ngFor="let leccion of lecciones, let id = index">
             <div class="d-flex justify-content-between cursor-pointer" (click)="irALeccion(id)">
                 <p>

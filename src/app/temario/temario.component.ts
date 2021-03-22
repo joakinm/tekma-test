@@ -13,6 +13,9 @@ export class TemarioComponent implements OnInit {
 
   constructor(private router: Router, private temarioService: TemarioService) {
     this.temario = this.temarioService.obtenerTemarios();
+    this.temarioService.temariosCambio.subscribe(t => {
+      this.temario = t
+    });
    }
 
   ngOnInit(): void {

@@ -18,7 +18,7 @@ export class LeccionComponent implements OnInit {
   leccionLeida() {
     this.temarioService.modificarLeccionLeida(this.idLeccion);
     const temarioSeleccionado = this.temarioService.temarioSeleccionado;
-    alert(`Lección número ${this.idLeccion} leída del temario ${temarioSeleccionado.nombre}`)
+    alert(`Lección número ${this.idLeccion + 1} del temario ${temarioSeleccionado.nombre} leída`)
     this.router.navigate(['temario']);
   }
 }

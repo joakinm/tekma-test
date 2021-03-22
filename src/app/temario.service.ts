@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 import * as data from '../assets/temario.json';
 import { Temario } from './models/temario.model';
 
@@ -8,6 +9,7 @@ import { Temario } from './models/temario.model';
 export class TemarioService {
   public temarios: Array<Temario>;
   public temarioSeleccionado: Temario;
+  public temariosCambio = new Subject<Array<Temario>>();
 
   constructor() {
     this.temarios = data.Temario;
@@ -26,7 +28,9 @@ export class TemarioService {
   }
 
   public modificarLeccionLeida(idLeccion: number) {
-    this.temarioSeleccionado.lecciones[idLeccion].estaLeido === !this.temarioSeleccionado.lecciones[idLeccion].estaLeido;
+    const temarioIndex = this.temarios.findIndex(t => {return t.nombre == this.temarioSeleccionado.nombre});
+    this.temarios[temarioIndex].lecciones[idLeccion].estaLeido = !this.temarioSeleccionado.lecciones[idLeccion].estaLeido;
+    this.temariosCambio.next(this.temarios.slice());
   }
 
   public SeleccionarTemario(idTemario: number) {
