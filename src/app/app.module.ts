@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TemarioComponent } from './temario/temario.component';
 import { TemarioLeccionComponent } from './temario/temario-leccion/temario-leccion.component';
+import { LeccionComponent } from './leccion/leccion.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TemarioLeccionComponent } from './temario/temario-leccion/temario-lecci
     HeaderComponent,
     SidebarComponent,
     TemarioComponent,
-    TemarioLeccionComponent
+    TemarioLeccionComponent,
+    LeccionComponent
   ],
   imports: [
     BrowserModule,
