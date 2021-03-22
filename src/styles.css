@@ -3,6 +3,18 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
-.container {
+body {
     background-color: #f0f0f0;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+.icon-medium-size {
+    font-size: 1rem;
 }

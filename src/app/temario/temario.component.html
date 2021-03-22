@@ -1,7 +1,7 @@
 <div>
     <h1>Temario</h1>
     <div class="d-flex p-2">
-        <div class="temas-container" *ngFor="let tema of temario; let id = index" (click)="verTemario(id)">
+        <div class="temas-container cursor-pointer" *ngFor="let tema of temario; let id = index" (click)="verTemario(id)">
             <div>
                <h6>
                     {{tema.nombre}}

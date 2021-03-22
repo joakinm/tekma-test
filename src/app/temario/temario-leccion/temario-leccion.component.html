@@ -1,5 +1,11 @@
-<div *ngFor="let leccion of lecciones">
-    {{leccion.nombre}}
-    <i class="bi bi-eye" *ngIf="leccion.estaLeido"></i>
-    <i class="bi bi-eye-slash" *ngIf="!leccion.estaLeido"></i>
+<div class="cursor-pointer icon-medium-size pt-3 pb-3" (click)="volver()"> <i class="bi bi-arrow-left  pr-2"></i>Atr&aacute;s</div>
+
+<div class="list-group-item clearfix" *ngFor="let leccion of lecciones, let id = index">
+    <div class="d-flex justify-content-between cursor-pointer" (click)="irALeccion(id)">
+        <p>
+            {{leccion.nombre}}
+        </p>
+        <i class="bi bi-eye icon-medium-size" *ngIf="leccion.estaLeido"></i>
+        <i class="bi bi-eye-slash icon-medium-size" *ngIf="!leccion.estaLeido"></i>
+    </div>
 </div>

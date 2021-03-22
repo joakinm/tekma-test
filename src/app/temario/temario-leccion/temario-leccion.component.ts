@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Leccion } from 'src/app/models/leccion.model';
 import * as data from '../../../assets/temario.json';
 
@@ -11,11 +11,18 @@ import * as data from '../../../assets/temario.json';
 export class TemarioLeccionComponent implements OnInit {
   public id: number;
   public lecciones = new Array<Leccion>();
-  constructor( public rutaActiva: ActivatedRoute) { }
+  constructor( public rutaActiva: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.id = +this.rutaActiva.snapshot.paramMap.get('id');
     this.lecciones = data.Temario[this.id].lecciones;
   }
 
+  public volver() {
+    this.router.navigate(['/temario']);
+  }
+
+  public irALeccion(id: number) {
+    this.router.navigate(['/leccion/' + id]);
+  }
 }
