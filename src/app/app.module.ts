@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TemarioComponent } from './temario/temario.component';
+import { TemarioLeccionComponent } from './temario/temario-leccion/temario-leccion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SidebarComponent,
-    TemarioComponent
+    TemarioComponent,
+    TemarioLeccionComponent
   ],
   imports: [
     BrowserModule,

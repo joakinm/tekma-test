@@ -2,3 +2,7 @@
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.container {
+    background-color: #f0f0f0;
+}

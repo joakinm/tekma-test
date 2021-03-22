@@ -1,8 +1,15 @@
-<div *ngFor="let tema of temario; let i = index">
-    <div>
-        {{i}}
-    </div>
-    <div>
-        {{tema.nombre}}
+<div>
+    <h1>Temario</h1>
+    <div class="d-flex p-2">
+        <div class="temas-container" *ngFor="let tema of temario; let id = index" (click)="verTemario(id)">
+            <div>
+               <h6>
+                    {{tema.nombre}}
+               </h6>  
+               <p>
+                   {{tema.lecciones.length}} Lecciones 
+               </p>
+            </div>
+        </div>
     </div>
 </div>

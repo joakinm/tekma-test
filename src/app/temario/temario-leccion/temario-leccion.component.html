@@ -1,0 +1,5 @@
+<div *ngFor="let leccion of lecciones">
+    {{leccion.nombre}}
+    <i class="bi bi-eye" *ngIf="leccion.estaLeido"></i>
+    <i class="bi bi-eye-slash" *ngIf="!leccion.estaLeido"></i>
+</div>
