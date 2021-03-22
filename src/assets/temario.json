@@ -1,0 +1,79 @@
+{
+    "Temario": [
+        {
+            "nombre": "1er trimestre",
+            "lecciones": [
+                {
+                    "nombre": "Administración y Negocios parte I.",
+                    "estaLeido": false
+                },
+                {
+                    "nombre": "Agricultura y Agronomía. parte I.",
+                    "estaLeido": false
+                },
+                {
+                    "nombre": "Alimentación y nutrición. parte I.",
+                    "estaLeido": false
+                },
+                {
+                    "nombre": "Alta Gerencia y Liderazgo. parte I.",
+                    "estaLeido": false
+                },
+                {
+                    "nombre": "Arquitectura y Urbanismo. parte I.",
+                    "estaLeido": false
+                }
+            ]
+        },
+        {
+            "nombre": "2do trimestre",
+            "lecciones": [
+                {
+                    "nombre":" Administración y Negocios parte II.",
+                    "estaLeido": false
+                },
+                {
+                    "nombre": "Agricultura y Agronomía. parte II.",
+                    "estaLeido": false
+                },
+                {
+                    "nombre": "Alimentación y nutrición. parte II.",
+                    "estaLeido": false
+                },
+                {
+                    "nombre": "Alta Gerencia y Liderazgo. parte II.",
+                    "estaLeido": false
+                },
+                {
+                    "nombre": "Arquitectura y Urbanismo. parte II.",
+                    "estaLeido": false
+                }
+        ]
+        },
+        {
+            "nombre": "3er trimestre",
+            "lecciones": [
+                {
+                    "nombre":" Administración y Negocios parte III.",
+                    "estaLeido": false
+                },
+                {
+                    "nombre": "Agricultura y Agronomía. parte III.",
+                    "estaLeido": false
+                },
+                {
+                    "nombre": "Alimentación y nutrición. parte III.",
+                    "estaLeido": false
+                },
+                {
+                    "nombre": "Alta Gerencia y Liderazgo. parte III.",
+                    "estaLeido": false
+                },
+                {
+                    "nombre": "Arquitectura y Urbanismo. parte III.",
+                    "estaLeido": false
+                }
+            ]           
+        }
+    ]
+}
