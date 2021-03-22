@@ -16,11 +16,6 @@ export class TemarioComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.calcularSesionesVistas();
-  }
-
-  private calcularSesionesVistas() {
-    
   }
 
   public verTemario(index: number) {

@@ -8,6 +8,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { TemarioComponent } from './temario/temario.component';
 import { TemarioLeccionComponent } from './temario/temario-leccion/temario-leccion.component';
 import { LeccionComponent } from './leccion/leccion.component';
+import { LeccionesVistasPipe } from './lecciones-vistas.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LeccionComponent } from './leccion/leccion.component';
     SidebarComponent,
     TemarioComponent,
     TemarioLeccionComponent,
-    LeccionComponent
+    LeccionComponent,
+    LeccionesVistasPipe
   ],
   imports: [
     BrowserModule,
