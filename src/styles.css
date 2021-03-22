@@ -18,3 +18,10 @@ p {
 .icon-medium-size {
     font-size: 1rem;
 }
+
+.temas-container {
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
