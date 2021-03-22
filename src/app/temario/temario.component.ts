@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Temario } from '../models/temario.model';
-import * as data from '../../assets/temario.json';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
+import { TemarioService } from '../temario.service';
 
 @Component({
   selector: 'app-temario',
@@ -10,14 +10,20 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class TemarioComponent implements OnInit {
   public temario: Array<Temario>;
-  constructor(private router: Router, private route: ActivatedRoute) {
-    this.temario = data.Temario;
+
+  constructor(private router: Router, private temarioService: TemarioService) {
+    this.temario = this.temarioService.obtenerTemarios();
    }
 
   ngOnInit(): void {
+    this.calcularSesionesVistas();
   }
 
-  verTemario(index: number) {
+  private calcularSesionesVistas() {
+    
+  }
+
+  public verTemario(index: number) {
     this.router.navigate(['/temario/' + index]);
   }
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { TemarioService } from '../temario.service';
 
 @Component({
   selector: 'app-leccion',
@@ -7,11 +8,17 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./leccion.component.css']
 })
 export class LeccionComponent implements OnInit {
-  public id: number;
-  constructor(public rutaActiva: ActivatedRoute, private router: Router) { }
+  public idLeccion: number;
+  constructor(public rutaActiva: ActivatedRoute, private router: Router, private temarioService: TemarioService ) { }
 
   ngOnInit(): void {
-    this.id = +this.rutaActiva.snapshot.paramMap.get('id');
+    this.idLeccion = +this.rutaActiva.snapshot.paramMap.get('id');
   }
 
+  leccionLeida() {
+    this.temarioService.modificarLeccionLeida(this.idLeccion);
+    const temarioSeleccionado = this.temarioService.temarioSeleccionado;
+    alert(`Lección número ${this.idLeccion} leída del temario ${temarioSeleccionado.nombre}`)
+    this.router.navigate(['temario']);
+  }
 }

@@ -5,15 +5,15 @@
             "lecciones": [
                 {
                     "nombre": "Administración y Negocios parte I.",
-                    "estaLeido": false
+                    "estaLeido": true
                 },
                 {
                     "nombre": "Agricultura y Agronomía. parte I.",
-                    "estaLeido": false
+                    "estaLeido": true
                 },
                 {
                     "nombre": "Alimentación y nutrición. parte I.",
-                    "estaLeido": false
+                    "estaLeido": true
                 },
                 {
                     "nombre": "Alta Gerencia y Liderazgo. parte I.",
