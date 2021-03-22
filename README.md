@@ -1,27 +1,19 @@
 # TekmaTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+Este proyecto fue generado con Angular, version 9.1.7. Es una aplicación de educación, con temarios y lecciones para los usuarios.
+Rutas: 
+/temario       Desde aqui puede visualisar los diferentes trimestres con las lecciones visualizadas, 
+			   al clickear un trimestre, podemos navegar hacia las lecciones según la posicion de los trimestres, a sus lecciones
+			   
+/temario/:id   En esta ruta podemos ver las diferentes lecciones de cada temario, y si estan visualizadas, o no, 
+			   al hacer click en una, vamos a un previsualizador de lecciones, con un mensaje
 
-## Development server
+/leccion/:id   Tenemos un aviso con una leyenda "Antes de empezar..." y recomendaciones. El boton "Empezar pase" en un futuro redirigira a un video capacitorio,
+			   por el momento, solo marca la lección como leída, y redirige a /temario 
+			   
+## Para correr la aplicación
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Vaya con una consola hacia la carpeta raiz y escriba `npm i` para instalar todas las dependencias y librerias necesarias para que la aplicacion funcione. 
+Corra `ng serve` para poder correr la aplicación.
+abra su navegador y vaya a la dirección `http://localhost:4200/`. 
+La aplicación se refresca cada vez que se guarda un cambio.
